@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToolBarModule } from '@progress/kendo-angular-toolbar';
+
 
 
 
@@ -14,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     GridModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ToolBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

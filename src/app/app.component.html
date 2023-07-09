@@ -10,3 +10,48 @@
     </ng-template>
   </kendo-grid-command-column>
 </kendo-grid>
+
+<br>
+<br>
+<br>
+
+
+
+
+<kendo-toolbar>
+  <kendo-toolbar-button text="Button"></kendo-toolbar-button>
+  <kendo-toolbar-button
+    text="Toggle"
+    [toggleable]="true"
+  ></kendo-toolbar-button>
+  <kendo-toolbar-splitbutton text="Split Button" [data]="splitButtonData">
+  </kendo-toolbar-splitbutton>
+  <kendo-toolbar-dropdownbutton
+    text="DropDownButton"
+    [data]="dropdownButtonData"
+  >
+  </kendo-toolbar-dropdownbutton>
+  <kendo-toolbar-buttongroup selection="single">
+    <kendo-toolbar-button
+      [toggleable]="true"
+      title="Align left"
+      [svgIcon]="alignLeftIcon"
+    ></kendo-toolbar-button>
+    <kendo-toolbar-button
+      [toggleable]="true"
+      title="Align center"
+      [svgIcon]="alignCenterIcon"
+    ></kendo-toolbar-button>
+    <kendo-toolbar-button
+      [toggleable]="true"
+      title="Align right"
+      [svgIcon]="alignRightIcon"
+    ></kendo-toolbar-button>
+    <kendo-toolbar-button
+      [toggleable]="true"
+      title="Align justify"
+      [svgIcon]="alignJustifyIcon"
+    ></kendo-toolbar-button>
+  </kendo-toolbar-buttongroup>
+</kendo-toolbar>
+
